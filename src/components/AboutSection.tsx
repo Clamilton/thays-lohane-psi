@@ -1,4 +1,5 @@
 import { Award, BookOpen, Heart, Users } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const AboutSection = () => {
   return (
@@ -6,13 +7,11 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image side */}
-          <div className="relative order-2 lg:order-1">
+          <ScrollReveal direction="left" className="relative order-2 lg:order-1">
             <div className="relative w-full max-w-md mx-auto">
-              {/* Decorative background */}
               <div className="absolute -top-4 -left-4 w-full h-full bg-primary/10 rounded-3xl" />
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-mint/20 rounded-3xl" />
               
-              {/* Main image container */}
               <div className="relative bg-gradient-to-br from-sage-light to-mint-light rounded-3xl overflow-hidden aspect-[4/5] shadow-xl">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-8">
@@ -24,7 +23,6 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              {/* Floating card */}
               <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-2xl shadow-lg border">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -37,11 +35,11 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Content side */}
           <div className="order-1 lg:order-2 space-y-8">
-            <div>
+            <ScrollReveal direction="right">
               <p className="text-primary font-medium mb-2">Sobre Mim</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground mb-6">
                 Prazer, sou a{" "}
@@ -63,49 +61,28 @@ const AboutSection = () => {
                   se expressar livremente e trabalhar suas questões emocionais com o suporte necessário.
                 </p>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 pt-4">
-              <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Formação Sólida</h3>
-                  <p className="text-sm text-muted-foreground">Graduação em Psicologia e pós-graduação em TCC</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Atendimento Humanizado</h3>
-                  <p className="text-sm text-muted-foreground">Escuta empática e acolhimento genuíno</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Users className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Experiência Comprovada</h3>
-                  <p className="text-sm text-muted-foreground">Mais de 500 pacientes atendidos</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Award className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Atualização Constante</h3>
-                  <p className="text-sm text-muted-foreground">Cursos e supervisões regulares</p>
-                </div>
-              </div>
+              {[
+                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós-graduação em TCC" },
+                { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta empática e acolhimento genuíno" },
+                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 500 pacientes atendidos" },
+                { icon: Award, title: "Atualização Constante", desc: "Cursos e supervisões regulares" },
+              ].map((item, i) => (
+                <ScrollReveal key={i} delay={i * 0.1} direction="up">
+                  <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Brain, Heart, HeartHandshake, Sparkles, Users, Flower2 } from "lucide-react";
 import AnimatedLeaves from "@/components/AnimatedLeaves";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface ServicesSectionProps {
   onScheduleClick: () => void;
@@ -52,7 +53,7 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
       <AnimatedLeaves />
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-primary font-medium mb-2">Serviços</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground mb-6">
             Como posso te <span className="text-primary">ajudar</span>?
@@ -61,32 +62,31 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
             Ofereço diferentes modalidades de atendimento psicológico, sempre com foco no seu 
             bem-estar e na construção de uma vida mais equilibrada e significativa.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
-            >
-              <CardHeader className="pb-4">
-                <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="w-7 h-7 text-primary" />
-                </div>
-                <CardTitle className="text-xl font-serif">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed text-base">
-                  {service.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <ScrollReveal key={index} delay={index * 0.1} direction="up">
+              <Card className="group border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card h-full">
+                <CardHeader className="pb-4">
+                  <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl font-serif">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-muted-foreground leading-relaxed text-base">
+                    {service.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16">
+        <ScrollReveal delay={0.3} className="text-center mt-16">
           <div className="inline-block p-8 bg-card rounded-3xl shadow-lg border">
             <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">
               Pronta para começar sua jornada?
@@ -103,7 +103,7 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
               Agendar minha consulta
             </Button>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
