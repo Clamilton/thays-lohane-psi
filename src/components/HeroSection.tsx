@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles } from "lucide-react";
+import AnimatedLeaves from "@/components/AnimatedLeaves";
 
 interface HeroSectionProps {
   onScheduleClick: () => void;
@@ -8,12 +9,15 @@ interface HeroSectionProps {
 const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-mint-light to-accent">
-      {/* Decorative elements */}
+      {/* Decorative blurred circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-32 right-20 w-48 h-48 bg-mint/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-sage-light/30 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }} />
       </div>
+
+      {/* Animated leaves */}
+      <AnimatedLeaves />
 
       <div className="container mx-auto px-4 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
