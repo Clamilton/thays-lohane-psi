@@ -54,10 +54,9 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               transition={{ duration: 0.7, delay: 0.7 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Auxilio você na compreensão e elaboração do sofrimento emocional, considerando sua história, 
-              suas relações e o contexto em que está inserido. O processo terapêutico possibilita a construção 
-              de novos sentidos e formas de posicionamento, promovendo autonomia e um cuidado mais consciente 
-              com a saúde mental.
+              Estou aqui para ajudá-lo a lidar com o seu sofrimento emocional e com tudo aquilo que tem sido difícil enfrentar sozinho.
+              {" "}Na terapia, construímos juntos novos sentidos para o que você vive e buscamos formas mais saudáveis de se posicionar diante das situações. 
+              Este é um espaço seguro, de escuta e acolhimento, onde você pode falar livremente, no seu tempo e com respeito aos seus limites.
             </motion.p>
             
             <motion.div
