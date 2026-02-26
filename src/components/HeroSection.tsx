@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles } from "lucide-react";
 import AnimatedLeaves from "@/components/AnimatedLeaves";
-import thaysFoto from "@/assets/thays-foto.jpeg";
+import thaysClose from "@/assets/thays-close.jpeg";
 interface HeroSectionProps {
   onScheduleClick: () => void;
 }
@@ -119,9 +119,9 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               <div className="absolute inset-4 bg-gradient-to-tr from-sage-light to-accent rounded-full" />
               <div className="absolute inset-8 bg-gradient-to-br from-primary/10 to-mint/20 rounded-full overflow-hidden border-4 border-background shadow-2xl">
                 <img 
-                  src={thaysFoto} 
+                  src={thaysClose} 
                   alt="Thays Lohane - Psicóloga Clínica" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
