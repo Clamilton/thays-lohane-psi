@@ -67,7 +67,7 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
         </ScrollReveal>
 
         {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <ScrollReveal key={index} delay={index * 0.1} direction="up">
               <Card className="group border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card h-full">
