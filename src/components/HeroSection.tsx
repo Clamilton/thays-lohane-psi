@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles } from "lucide-react";
 import AnimatedLeaves from "@/components/AnimatedLeaves";
-
+import thaysFoto from "@/assets/thays-foto.jpeg";
 interface HeroSectionProps {
   onScheduleClick: () => void;
 }
@@ -117,14 +117,12 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
             <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-mint/30 rounded-full transform rotate-6" />
               <div className="absolute inset-4 bg-gradient-to-tr from-sage-light to-accent rounded-full" />
-              <div className="absolute inset-8 bg-gradient-to-br from-primary/10 to-mint/20 rounded-full overflow-hidden border-4 border-background shadow-2xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Heart className="w-12 h-12 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Foto profissional</p>
-                  <p className="text-muted-foreground text-xs">da psicóloga</p>
-                </div>
+              <div className="absolute inset-8 bg-gradient-to-br from-primary/10 to-mint/20 rounded-full overflow-hidden border-4 border-background shadow-2xl">
+                <img 
+                  src={thaysFoto} 
+                  alt="Thays Lohane - Psicóloga Clínica" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
           </motion.div>
