@@ -143,19 +143,36 @@ const AnimatedLeaves = () => {
       <SmallLeaf className="absolute left-4 top-8 w-4 h-5 text-forest animate-breeze-fast rotate-45" delay={1.2} />
       <SmallLeaf className="absolute right-4 bottom-8 w-4 h-5 text-forest animate-breeze-slow -rotate-12" delay={1.8} />
 
-      {/* Grass clusters around the edges - blurred shadow effect */}
+      {/* Bottom grass clusters - continuous coverage */}
       <GrassCluster className="bottom-0 left-0 w-28 h-10 animate-breeze" delay={0.6} />
-      <GrassCluster className="bottom-0 right-0 w-32 h-10 animate-breeze-slow" delay={0.9} />
-      <GrassCluster className="bottom-0 left-1/4 w-24 h-8 animate-breeze-fast" delay={1.1} />
-      <GrassCluster className="bottom-0 right-1/4 w-20 h-8 animate-breeze" delay={1.3} />
-      <GrassCluster className="top-0 left-8 w-20 h-8 rotate-180 animate-breeze-slow" delay={0.7} />
-      <GrassCluster className="top-0 right-8 w-24 h-8 rotate-180 animate-breeze" delay={1.0} />
+      <GrassCluster className="bottom-0 left-[10%] w-24 h-9 animate-breeze-fast" delay={0.8} />
+      <GrassCluster className="bottom-0 left-[20%] w-26 h-10 animate-breeze-slow" delay={1.0} />
+      <GrassCluster className="bottom-0 left-[32%] w-24 h-8 animate-breeze" delay={1.1} />
+      <GrassCluster className="bottom-0 left-[44%] w-28 h-9 animate-breeze-fast" delay={0.7} />
+      <GrassCluster className="bottom-0 left-[56%] w-24 h-10 animate-breeze-slow" delay={1.2} />
+      <GrassCluster className="bottom-0 left-[68%] w-26 h-8 animate-breeze" delay={0.9} />
+      <GrassCluster className="bottom-0 left-[80%] w-24 h-9 animate-breeze-fast" delay={1.3} />
+      <GrassCluster className="bottom-0 right-0 w-32 h-10 animate-breeze-slow" delay={0.5} />
 
-      {/* Grass blades scattered at edges */}
-      <GrassBlade className="absolute bottom-0 left-[15%] w-6 h-12 text-forest animate-breeze" delay={1.5} />
-      <GrassBlade className="absolute bottom-0 right-[15%] w-5 h-10 text-forest animate-breeze-slow" delay={1.7} />
-      <GrassBlade className="absolute bottom-0 left-[45%] w-4 h-8 text-forest animate-breeze-fast" delay={1.9} />
-      <GrassBlade className="absolute bottom-0 right-[40%] w-5 h-9 text-forest animate-breeze" delay={2.1} />
+      {/* Top grass clusters - continuous coverage */}
+      <GrassCluster className="top-0 left-0 w-24 h-8 rotate-180 animate-breeze-slow" delay={0.7} />
+      <GrassCluster className="top-0 left-[12%] w-20 h-8 rotate-180 animate-breeze" delay={0.9} />
+      <GrassCluster className="top-0 left-[24%] w-24 h-9 rotate-180 animate-breeze-fast" delay={1.1} />
+      <GrassCluster className="top-0 left-[38%] w-22 h-8 rotate-180 animate-breeze-slow" delay={0.8} />
+      <GrassCluster className="top-0 left-[50%] w-24 h-8 rotate-180 animate-breeze" delay={1.0} />
+      <GrassCluster className="top-0 left-[64%] w-20 h-9 rotate-180 animate-breeze-fast" delay={1.2} />
+      <GrassCluster className="top-0 left-[76%] w-24 h-8 rotate-180 animate-breeze" delay={0.6} />
+      <GrassCluster className="top-0 right-0 w-28 h-8 rotate-180 animate-breeze-slow" delay={1.0} />
+
+      {/* Grass blades scattered at edges for extra density */}
+      <GrassBlade className="absolute bottom-0 left-[8%] w-5 h-10 text-forest animate-breeze" delay={1.5} />
+      <GrassBlade className="absolute bottom-0 left-[18%] w-6 h-12 text-forest animate-breeze-slow" delay={1.6} />
+      <GrassBlade className="absolute bottom-0 left-[30%] w-4 h-9 text-forest animate-breeze-fast" delay={1.7} />
+      <GrassBlade className="absolute bottom-0 left-[42%] w-5 h-10 text-forest animate-breeze" delay={1.8} />
+      <GrassBlade className="absolute bottom-0 left-[55%] w-4 h-8 text-forest animate-breeze-slow" delay={1.9} />
+      <GrassBlade className="absolute bottom-0 left-[65%] w-6 h-11 text-forest animate-breeze-fast" delay={2.0} />
+      <GrassBlade className="absolute bottom-0 left-[78%] w-5 h-9 text-forest animate-breeze" delay={2.1} />
+      <GrassBlade className="absolute bottom-0 right-[8%] w-5 h-10 text-forest animate-breeze-slow" delay={1.4} />
     </div>
   );
 };
