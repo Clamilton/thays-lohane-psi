@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-serif font-semibold">Thays Lohane</h3>
             <p className="text-white/70 leading-relaxed">
-              Psicóloga clínica dedicada a promover saúde mental e bem-estar através 
-              de um atendimento humanizado e acolhedor.
+              Psicóloga clínica dedicada a promover saúde mental e bem-estar através de um atendimento humanizado e
+              acolhedor.
             </p>
-            <p className="text-white/50 text-sm">CRP 23/002275</p>
+            <p className="text-white/50 text-sm">CRP 23/XXXXX</p>
           </div>
 
           {/* Quick Links */}
@@ -32,9 +32,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.instagram.com/thayslohanepsi" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/thayslohanepsi"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors"
                 >
@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-white/70">
                 <MapPin className="w-5 h-5 flex-shrink-0" />
-                <span>Atendimento Online & Presencial</span>
+                <span>Somente atendimento Online</span>
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <Phone className="w-5 h-5 flex-shrink-0" />
@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-white/70">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <span>contato@thayslohanepsi.com.br</span>
+                <span>thayslohane.psi@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -66,12 +66,10 @@ const Footer = () => {
           {/* Social */}
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Redes Sociais</h4>
-            <p className="text-white/70">
-              Me siga no Instagram para dicas de saúde mental e bem-estar.
-            </p>
-            <a 
-              href="https://www.instagram.com/thayslohanepsi" 
-              target="_blank" 
+            <p className="text-white/70">Me siga no Instagram para dicas de saúde mental e bem-estar.</p>
+            <a
+              href="https://www.instagram.com/thayslohanepsi"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
             >
@@ -86,10 +84,10 @@ const Footer = () => {
           <p className="text-white/50 text-sm text-center md:text-left">
             © {currentYear} Thays Lohane - Psicóloga. Todos os direitos reservados.
           </p>
-        <p className="text-white/50 text-sm flex items-center gap-1">
-          Feito com <Heart className="w-4 h-4 text-destructive fill-destructive" /> para cuidar de você
-        </p>
-      </div>
+          <p className="text-white/50 text-sm flex items-center gap-1">
+            Feito com <Heart className="w-4 h-4 text-destructive fill-destructive" /> para cuidar de você
+          </p>
+        </div>
       </div>
     </footer>
   );

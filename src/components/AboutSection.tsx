@@ -1,6 +1,5 @@
 import { Award, BookOpen, Heart, Users } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import thaysFoto from "@/assets/thays-foto.jpeg";
 
 const AboutSection = () => {
   return (
@@ -12,22 +11,25 @@ const AboutSection = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute -top-4 -left-4 w-full h-full bg-primary/10 rounded-3xl" />
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-mint/20 rounded-3xl" />
-              
+
               <div className="relative bg-gradient-to-br from-sage-light to-mint-light rounded-3xl overflow-hidden aspect-[4/5] shadow-xl">
-                <img 
-                  src={thaysFoto} 
-                  alt="Thays Lohane - Psicóloga Clínica" 
-                  className="w-full h-full object-cover object-bottom"
-                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-32 h-32 mx-auto mb-6 bg-primary/20 rounded-full flex items-center justify-center">
+                      <Heart className="w-16 h-16 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">Foto profissional</p>
+                  </div>
+                </div>
               </div>
 
-              <div className="absolute -top-6 -left-6 bg-card p-4 rounded-2xl shadow-lg border">
+              <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-2xl shadow-lg border">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">CRP 23/002275</p>
+                    <p className="font-semibold text-foreground">CRP 23/XXXXX</p>
                     <p className="text-sm text-muted-foreground">Registro ativo</p>
                   </div>
                 </div>
@@ -40,20 +42,21 @@ const AboutSection = () => {
             <ScrollReveal direction="right">
               <p className="text-primary font-medium mb-2">Sobre Mim</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground mb-6">
-                Prazer, sou a{" "}
-                <span className="text-primary">Thays Lohane</span>
+                Prazer, sou a <span className="text-primary">Thays Lohane</span>
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam 
-                  compreender suas emoções e construir novas possibilidades. Minha prática é fundamentada na 
-                  abordagem Histórico-Cultural, que entende o ser humano a partir de sua trajetória, relações 
-                  e contexto social.
+                  Sou psicóloga clínica formada com especialização em Terapia Cognitivo-Comportamental (TCC), apaixonada
+                  por ajudar pessoas a encontrarem seu equilíbrio emocional e viverem de forma mais plena e consciente.
                 </p>
                 <p>
-                  Atendo na modalidade online, com escuta qualificada, ética e acolhedora. Possuo pós-graduação 
-                  em Avaliação Psicológica e meu compromisso é oferecer um espaço seguro, respeitando a 
-                  singularidade de cada pessoa e seu tempo de processo.
+                  Minha abordagem é baseada no acolhimento, na escuta empática e no uso de técnicas cientificamente
+                  comprovadas para promover mudanças reais na vida dos meus pacientes. Acredito que cada pessoa é única
+                  e merece um atendimento personalizado às suas necessidades.
+                </p>
+                <p>
+                  Atendendo online, sempre buscando criar um espaço seguro onde você possa se expressar livremente e
+                  trabalhar suas questões emocionais com o suporte necessário.
                 </p>
               </div>
             </ScrollReveal>
@@ -61,10 +64,10 @@ const AboutSection = () => {
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 pt-4">
               {[
-                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós em Avaliação Psicológica" },
-                { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta qualificada, ética e acolhedora" },
-                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 5 anos de atuação clínica" },
-                { icon: Award, title: "Abordagem Histórico-Cultural", desc: "Compreensão do ser humano a partir de sua trajetória" },
+                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós-graduação em TCC" },
+                { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta empática e acolhimento genuíno" },
+                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 500 pacientes atendidos" },
+                { icon: Award, title: "Atualização Constante", desc: "Cursos e supervisões regulares" },
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.1} direction="up">
                   <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">
