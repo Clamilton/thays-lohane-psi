@@ -130,7 +130,7 @@ const GrassCluster = ({ className = "", delay = 0 }: { className?: string; delay
 
 const AnimatedLeaves = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true" style={{ zIndex: 0 }}>
       {/* Left side - pushed further to edges */}
       <Branch className="absolute -left-10 top-20 w-24 h-36 text-forest animate-breeze-slow" delay={0.2} />
       <SmallLeaf className="absolute left-2 bottom-1/4 w-5 h-7 text-forest animate-breeze-fast" delay={1.4} />
