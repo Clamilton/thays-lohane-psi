@@ -46,25 +46,14 @@ const AboutSection = () => {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam 
-                  compreender suas emoções, enfrentar desafios e construir novas possibilidades em suas vidas.
+                  compreender suas emoções e construir novas possibilidades. Minha prática é fundamentada na 
+                  abordagem Histórico-Cultural, que entende o ser humano a partir de sua trajetória, relações 
+                  e contexto social.
                 </p>
                 <p>
-                  Minha prática é fundamentada na abordagem Histórico-Cultural, que entende o ser humano a 
-                  partir de sua trajetória, relações e contexto social. Acredito que nossa história influencia 
-                  a forma como pensamos, sentimos e nos posicionamos no mundo, e é a partir dessa compreensão 
-                  que desenvolvemos novos sentidos e formas de agir.
-                </p>
-                <p>
-                  Realizo atendimentos na modalidade online, oferecendo um espaço de escuta qualificada, ética 
-                  e acolhedora, com flexibilidade e conforto, independentemente da sua localização.
-                </p>
-                <p>
-                  Também possuo pós-graduação em Avaliação Psicológica, o que amplia meu olhar técnico e 
-                  contribui para uma compreensão mais aprofundada das demandas apresentadas no processo terapêutico.
-                </p>
-                <p>
-                  Meu compromisso é oferecer um espaço seguro, de diálogo e construção conjunta, respeitando 
-                  a singularidade de cada pessoa e seu tempo de processo.
+                  Atendo na modalidade online, com escuta qualificada, ética e acolhedora. Possuo pós-graduação 
+                  em Avaliação Psicológica e meu compromisso é oferecer um espaço seguro, respeitando a 
+                  singularidade de cada pessoa e seu tempo de processo.
                 </p>
               </div>
             </ScrollReveal>
