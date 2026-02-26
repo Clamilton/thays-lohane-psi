@@ -47,18 +47,26 @@ const AboutSection = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Sou psicóloga clínica formada com especialização em Terapia Cognitivo-Comportamental (TCC), 
-                  apaixonada por ajudar pessoas a encontrarem seu equilíbrio emocional e viverem de forma 
-                  mais plena e consciente.
+                  Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam 
+                  compreender suas emoções, enfrentar desafios e construir novas possibilidades em suas vidas.
                 </p>
                 <p>
-                  Minha abordagem é baseada no acolhimento, na escuta empática e no uso de técnicas 
-                  cientificamente comprovadas para promover mudanças reais na vida dos meus pacientes. 
-                  Acredito que cada pessoa é única e merece um atendimento personalizado às suas necessidades.
+                  Minha prática é fundamentada na abordagem Histórico-Cultural, que entende o ser humano a 
+                  partir de sua trajetória, relações e contexto social. Acredito que nossa história influencia 
+                  a forma como pensamos, sentimos e nos posicionamos no mundo, e é a partir dessa compreensão 
+                  que desenvolvemos novos sentidos e formas de agir.
                 </p>
                 <p>
-                  Atendo online e presencialmente, sempre buscando criar um espaço seguro onde você possa 
-                  se expressar livremente e trabalhar suas questões emocionais com o suporte necessário.
+                  Realizo atendimentos na modalidade online, oferecendo um espaço de escuta qualificada, ética 
+                  e acolhedora, com flexibilidade e conforto, independentemente da sua localização.
+                </p>
+                <p>
+                  Também possuo pós-graduação em Avaliação Psicológica, o que amplia meu olhar técnico e 
+                  contribui para uma compreensão mais aprofundada das demandas apresentadas no processo terapêutico.
+                </p>
+                <p>
+                  Meu compromisso é oferecer um espaço seguro, de diálogo e construção conjunta, respeitando 
+                  a singularidade de cada pessoa e seu tempo de processo.
                 </p>
               </div>
             </ScrollReveal>
@@ -66,10 +74,10 @@ const AboutSection = () => {
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 pt-4">
               {[
-                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós-graduação em TCC" },
-                { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta empática e acolhimento genuíno" },
-                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 500 pacientes atendidos" },
-                { icon: Award, title: "Atualização Constante", desc: "Cursos e supervisões regulares" },
+                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós em Avaliação Psicológica" },
+                { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta qualificada, ética e acolhedora" },
+                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 5 anos de atuação clínica" },
+                { icon: Award, title: "Abordagem Histórico-Cultural", desc: "Compreensão do ser humano a partir de sua trajetória" },
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.1} direction="up">
                   <div className="flex items-start gap-4 p-4 bg-accent/50 rounded-2xl">

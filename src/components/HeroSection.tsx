@@ -17,7 +17,6 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-sage-light/30 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }} />
       </div>
 
-      {/* Animated leaves */}
       <AnimatedLeaves />
 
       <div className="container mx-auto px-4 py-20 lg:py-32">
@@ -31,7 +30,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Psicóloga Clínica</span>
+              <span>Psicóloga Clínica — CRP 23/XXXXX</span>
             </motion.div>
             
             <motion.h1
@@ -55,9 +54,10 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               transition={{ duration: 0.7, delay: 0.7 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Olá, sou Thays Lohane. Estou aqui para te acompanhar em uma jornada de 
-              autoconhecimento, acolhimento e transformação. Juntos, podemos construir 
-              um caminho mais leve para a sua saúde mental.
+              Auxilio você na compreensão e elaboração do sofrimento emocional, considerando sua história, 
+              suas relações e o contexto em que está inserido. O processo terapêutico possibilita a construção 
+              de novos sentidos e formas de posicionamento, promovendo autonomia e um cuidado mais consciente 
+              com a saúde mental.
             </motion.p>
             
             <motion.div
@@ -91,7 +91,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               className="flex items-center gap-8 justify-center lg:justify-start pt-4"
             >
               <div className="text-center">
-                <p className="text-2xl font-serif font-bold text-primary">500+</p>
+                <p className="text-2xl font-serif font-bold text-primary">150+</p>
                 <p className="text-sm text-muted-foreground">Pacientes atendidos</p>
               </div>
               <div className="w-px h-12 bg-border" />
@@ -102,7 +102,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               <div className="w-px h-12 bg-border" />
               <div className="text-center">
                 <p className="text-2xl font-serif font-bold text-primary">Online</p>
-                <p className="text-sm text-muted-foreground">& Presencial</p>
+                <p className="text-sm text-muted-foreground">Atendimento</p>
               </div>
             </motion.div>
           </div>

@@ -11,38 +11,38 @@ interface ServicesSectionProps {
 const services = [
   {
     icon: Brain,
-    title: "Terapia Individual",
-    description: "Sessões personalizadas focadas nas suas necessidades específicas, promovendo autoconhecimento e desenvolvimento pessoal.",
+    title: "Ansiedade",
+    description: "Compreensão e manejo dos sintomas de ansiedade, buscando formas de lidar com as demandas do cotidiano de maneira mais equilibrada.",
     color: "bg-primary/10",
   },
   {
     icon: Heart,
-    title: "Ansiedade e Estresse",
-    description: "Técnicas comprovadas para gerenciar sintomas de ansiedade, ataques de pânico e estresse do dia a dia.",
+    title: "Depressão",
+    description: "Acompanhamento acolhedor para elaboração do sofrimento emocional, resgate de sentido e reconstrução do bem-estar.",
     color: "bg-mint/20",
   },
   {
     icon: Sparkles,
-    title: "Depressão",
-    description: "Acompanhamento acolhedor para superar momentos difíceis, recuperar a energia vital e reencontrar o prazer de viver.",
+    title: "Medos e Inseguranças",
+    description: "Trabalho terapêutico voltado à compreensão das origens dos medos e inseguranças, promovendo maior segurança e autonomia.",
     color: "bg-sage-light",
   },
   {
-    icon: Users,
-    title: "Terapia de Casal",
-    description: "Sessões para melhorar a comunicação, resolver conflitos e fortalecer o vínculo entre parceiros.",
+    icon: HeartHandshake,
+    title: "Dificuldades Emocionais",
+    description: "Espaço de escuta e elaboração para lidar com emoções intensas, promovendo autoconhecimento e regulação emocional.",
     color: "bg-accent",
   },
   {
-    icon: Flower2,
-    title: "Autoestima",
-    description: "Trabalho focado em desenvolver amor próprio, autoconfiança e uma relação mais saudável consigo mesma.",
+    icon: Users,
+    title: "Conflitos nos Relacionamentos",
+    description: "Reflexão sobre padrões relacionais, comunicação e construção de vínculos mais saudáveis e conscientes.",
     color: "bg-primary/10",
   },
   {
-    icon: HeartHandshake,
-    title: "Autoconhecimento",
-    description: "Jornada de descoberta pessoal para entender seus padrões, valores e encontrar seu propósito de vida.",
+    icon: Flower2,
+    title: "Autoconhecimento e Desenvolvimento Pessoal",
+    description: "Jornada de descoberta pessoal para compreender sua história, seus valores e construir novos caminhos de vida.",
     color: "bg-mint/20",
   },
 ];
@@ -56,11 +56,13 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-primary font-medium mb-2">Serviços</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground mb-6">
-            Como posso te <span className="text-primary">ajudar</span>?
+            Em que posso te <span className="text-primary">ajudar</span>?
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Ofereço diferentes modalidades de atendimento psicológico, sempre com foco no seu 
-            bem-estar e na construção de uma vida mais equilibrada e significativa.
+            Disponibilizo diferentes formas de atendimento psicológico, organizadas para atender às suas 
+            necessidades de forma ética, responsável e personalizada. O processo terapêutico é conduzido 
+            com base teórica sólida e foco na promoção do bem-estar emocional, da autonomia e da construção 
+            de novos sentidos para a sua vida.
           </p>
         </ScrollReveal>
 
