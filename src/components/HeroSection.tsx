@@ -91,11 +91,6 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               className="flex items-center gap-8 justify-center lg:justify-start pt-4"
             >
               <div className="text-center">
-                <p className="text-2xl font-serif font-bold text-primary">150+</p>
-                <p className="text-sm text-muted-foreground">Pacientes atendidos</p>
-              </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
                 <p className="text-2xl font-serif font-bold text-primary">5 anos</p>
                 <p className="text-sm text-muted-foreground">De experiência</p>
               </div>
