@@ -14,7 +14,7 @@ const Footer = () => {
               Psicóloga clínica dedicada a promover saúde mental e bem-estar através de um atendimento humanizado e
               acolhedor.
             </p>
-            <p className="text-white/50 text-sm">CRP 23/XXXXX</p>
+            <p className="text-white/50 text-sm">CRP 23/002275</p>
           </div>
 
           {/* Quick Links */}

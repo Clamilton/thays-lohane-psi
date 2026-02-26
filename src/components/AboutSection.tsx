@@ -29,7 +29,7 @@ const AboutSection = () => {
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">CRP 23/XXXXX</p>
+                    <p className="font-semibold text-foreground">CRP 23/002275</p>
                     <p className="text-sm text-muted-foreground">Registro ativo</p>
                   </div>
                 </div>
