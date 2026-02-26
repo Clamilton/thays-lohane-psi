@@ -1,16 +1,14 @@
-import { useState } from "react";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
-import ScheduleModal from "@/components/ScheduleModal";
+
+const WHATSAPP_URL = "https://wa.me/5563992774658?text=Olá,%20quero%20marcar%20minha%20consulta";
 
 const Index = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const handleScheduleClick = () => {
-    setIsModalOpen(true);
+    window.open(WHATSAPP_URL, "_blank");
   };
 
   return (
@@ -20,7 +18,6 @@ const Index = () => {
       <ServicesSection onScheduleClick={handleScheduleClick} />
       <Footer />
       <CookieBanner />
-      <ScheduleModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 };
