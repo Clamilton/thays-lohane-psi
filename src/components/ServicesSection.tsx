@@ -51,7 +51,7 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
   return (
     <section id="servicos" className="relative py-20 lg:py-32 bg-gradient-to-b from-background via-mint-light/30 to-background overflow-hidden">
       <AnimatedLeaves />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-28">
         {/* Header */}
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-primary font-medium mb-2">Serviços</p>
