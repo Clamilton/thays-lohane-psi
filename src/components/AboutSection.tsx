@@ -62,9 +62,9 @@ const AboutSection = () => {
             {/* Features */}
             <div className="grid sm:grid-cols-2 gap-4 pt-4">
               {[
-                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós-graduação em TCC" },
+                { icon: BookOpen, title: "Formação Sólida", desc: "Graduação em Psicologia e pós-graduação em Avaliação Psicológica" },
                 { icon: Heart, title: "Atendimento Humanizado", desc: "Escuta empática e acolhimento genuíno" },
-                { icon: Users, title: "Experiência Comprovada", desc: "Mais de 500 pacientes atendidos" },
+                { icon: Users, title: "Prática Clínica Consolidada", desc: "Atuação contínua no cuidado à saúde mental" },
                 { icon: Award, title: "Atualização Constante", desc: "Cursos e supervisões regulares" },
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.1} direction="up">
