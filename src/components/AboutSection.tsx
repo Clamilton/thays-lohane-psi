@@ -5,7 +5,7 @@ import thaysFoto from "@/assets/thays-foto.jpeg";
 const AboutSection = () => {
   return (
     <section id="sobre" className="py-20 lg:py-32 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-28">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image side */}
           <ScrollReveal direction="left" className="relative order-2 lg:order-1">

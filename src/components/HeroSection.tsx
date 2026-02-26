@@ -19,7 +19,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
 
       <AnimatedLeaves />
 
-      <div className="container mx-auto px-4 py-20 lg:py-32">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 xl:px-28 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
