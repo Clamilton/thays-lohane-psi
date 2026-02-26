@@ -30,7 +30,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Psicóloga Clínica — CRP 23/XXXXX</span>
+              <span>Psicóloga Clínica — CRP 23/002275</span>
             </motion.div>
             
             <motion.h1

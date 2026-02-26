@@ -17,17 +17,17 @@ const AboutSection = () => {
                 <img 
                   src={thaysFoto} 
                   alt="Thays Lohane - Psicóloga Clínica" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-bottom"
                 />
               </div>
 
-              <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-2xl shadow-lg border">
+              <div className="absolute -top-6 -left-6 bg-card p-4 rounded-2xl shadow-lg border">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">CRP 23/XXXXX</p>
+                    <p className="font-semibold text-foreground">CRP 23/002275</p>
                     <p className="text-sm text-muted-foreground">Registro ativo</p>
                   </div>
                 </div>
