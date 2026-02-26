@@ -44,17 +44,19 @@ const AboutSection = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Sou psicóloga clínica formada com especialização em Terapia Cognitivo-Comportamental (TCC), apaixonada
-                  por ajudar pessoas a encontrarem seu equilíbrio emocional e viverem de forma mais plena e consciente.
+                  Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam compreender suas emoções, enfrentar desafios e construir novas possibilidades em suas vidas.
                 </p>
                 <p>
-                  Minha abordagem é baseada no acolhimento, na escuta empática e no uso de técnicas cientificamente
-                  comprovadas para promover mudanças reais na vida dos meus pacientes. Acredito que cada pessoa é única
-                  e merece um atendimento personalizado às suas necessidades.
+                  Minha prática é fundamentada na abordagem Histórico-Cultural, que entende o ser humano a partir de sua trajetória, relações e contexto social. Acredito que nossa história influencia a forma como pensamos, sentimos e nos posicionamos no mundo, e é a partir dessa compreensão que desenvolvemos novos sentidos e formas de agir.
                 </p>
                 <p>
-                  Atendendo online, sempre buscando criar um espaço seguro onde você possa se expressar livremente e
-                  trabalhar suas questões emocionais com o suporte necessário.
+                  Realizo atendimentos na modalidade online, oferecendo um espaço de escuta qualificada, ética e acolhedora, com flexibilidade e conforto, independentemente da sua localização.
+                </p>
+                <p>
+                  Também possuo pós-graduação em Avaliação Psicológica, o que amplia meu olhar técnico e contribui para uma compreensão mais aprofundada das demandas apresentadas no processo terapêutico.
+                </p>
+                <p>
+                  Meu compromisso é oferecer um espaço seguro, de diálogo e construção conjunta, respeitando a singularidade de cada pessoa e seu tempo de processo.
                 </p>
               </div>
             </ScrollReveal>
