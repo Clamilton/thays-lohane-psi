@@ -92,38 +92,38 @@ const Branch = ({ className = "", style = {}, delay = 0 }: { className?: string;
 const GrassBlade = ({ className = "", style = {}, delay = 0 }: { className?: string; style?: React.CSSProperties; delay?: number }) => (
   <motion.svg
     className={className}
-    style={{ ...style, transformOrigin: 'bottom center', filter: 'blur(1.5px)' }}
-    viewBox="0 0 30 60"
+    style={{ ...style, transformOrigin: 'bottom center', filter: 'blur(1px)' }}
+    viewBox="0 0 20 50"
     fill="none"
     variants={sproutVariant(delay, 1)}
     initial="hidden"
     animate="visible"
   >
     <path
-      d="M15 60C15 60 8 35 3 20C0 10 5 0 15 5C25 0 30 10 27 20C22 35 15 60 15 60Z"
+      d="M10 50C10 50 7 30 5 18C4 10 8 2 10 4C12 2 16 10 15 18C13 30 10 50 10 50Z"
       fill="currentColor"
-      opacity="0.25"
+      opacity="0.15"
     />
   </motion.svg>
 );
 
 const GrassCluster = ({ className = "", delay = 0 }: { className?: string; delay?: number }) => (
-  <div className={`absolute ${className}`} style={{ filter: 'blur(2px)' }}>
+  <div className={`absolute ${className}`} style={{ filter: 'blur(1.5px)' }}>
     <motion.svg
       style={{ transformOrigin: 'bottom center' }}
-      viewBox="0 0 100 40"
+      viewBox="0 0 120 30"
       fill="none"
       className="w-full h-full text-forest"
       variants={sproutVariant(delay, 1.2)}
       initial="hidden"
       animate="visible"
     >
-      <path d="M5 40C5 40 8 20 15 12C18 9 22 10 20 18C18 25 10 40 5 40Z" fill="currentColor" opacity="0.2" />
-      <path d="M20 40C20 40 22 15 30 8C34 5 38 7 35 16C32 24 25 40 20 40Z" fill="currentColor" opacity="0.25" />
-      <path d="M38 40C38 40 40 18 48 10C52 6 56 8 53 17C50 26 42 40 38 40Z" fill="currentColor" opacity="0.2" />
-      <path d="M55 40C55 40 58 20 65 13C68 10 72 12 70 19C67 27 60 40 55 40Z" fill="currentColor" opacity="0.22" />
-      <path d="M72 40C72 40 74 16 82 9C86 6 90 8 87 17C84 25 77 40 72 40Z" fill="currentColor" opacity="0.18" />
-      <path d="M88 40C88 40 90 22 95 15C97 12 100 14 98 20C96 28 92 40 88 40Z" fill="currentColor" opacity="0.2" />
+      <path d="M8 30Q9 18 12 10Q13 7 14 12Q15 20 13 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.12" />
+      <path d="M25 30Q27 14 30 7Q31 4 32 9Q33 18 30 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.15" />
+      <path d="M45 30Q46 16 50 9Q51 6 52 11Q53 20 50 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.1" />
+      <path d="M62 30Q64 17 67 11Q68 8 69 13Q70 22 67 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.13" />
+      <path d="M80 30Q81 15 85 8Q86 5 87 10Q88 19 85 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.11" />
+      <path d="M98 30Q99 19 102 12Q103 9 104 14Q105 22 102 30" stroke="currentColor" strokeWidth="0.5" fill="currentColor" opacity="0.14" />
     </motion.svg>
   </div>
 );
