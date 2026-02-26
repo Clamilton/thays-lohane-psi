@@ -1,5 +1,6 @@
 import { Award, BookOpen, Heart, Users } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import thaysFoto from "@/assets/thays-foto.jpeg";
 
 const AboutSection = () => {
   return (
@@ -13,14 +14,11 @@ const AboutSection = () => {
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-mint/20 rounded-3xl" />
               
               <div className="relative bg-gradient-to-br from-sage-light to-mint-light rounded-3xl overflow-hidden aspect-[4/5] shadow-xl">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-6 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Heart className="w-16 h-16 text-primary" />
-                    </div>
-                    <p className="text-muted-foreground">Foto profissional</p>
-                  </div>
-                </div>
+                <img 
+                  src={thaysFoto} 
+                  alt="Thays Lohane - Psicóloga Clínica" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
 
               <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-2xl shadow-lg border">
