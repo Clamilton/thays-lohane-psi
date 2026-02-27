@@ -44,19 +44,13 @@ const AboutSection = () => {
               </h2>
               <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed md:leading-8">
                 <p>
-                  Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam compreender suas emoções, enfrentar desafios e construir novas possibilidades em suas vidas.
+                  Sou psicóloga com mais de 5 anos de experiência no atendimento de adultos, auxiliando no desenvolvimento do autoconhecimento, na compreensão das emoções e no enfrentamento de desafios pessoais.
                 </p>
                 <p>
-                  Minha prática é fundamentada na abordagem Histórico-Cultural, que entende o ser humano a partir de sua trajetória, relações e contexto social. Acredito que nossa história influencia a forma como pensamos, sentimos e nos posicionamos no mundo, e é a partir dessa compreensão que desenvolvemos novos sentidos e formas de agir.
+                  Atuo a partir da abordagem Histórico-Cultural, que considera a história de vida, as relações e o contexto social na construção de quem somos. Realizo atendimentos online, oferecendo um espaço de escuta ética, acolhedora e acessível, independentemente da localização.
                 </p>
                 <p>
-                  Realizo atendimentos na modalidade online, oferecendo um espaço de escuta qualificada, ética e acolhedora, com flexibilidade e conforto, independentemente da sua localização.
-                </p>
-                <p>
-                  Também possuo pós-graduação em Avaliação Psicológica, o que amplia meu olhar técnico e contribui para uma compreensão mais aprofundada das demandas apresentadas no processo terapêutico.
-                </p>
-                <p>
-                  Meu compromisso é oferecer um espaço seguro, de diálogo e construção conjunta, respeitando a singularidade de cada pessoa e seu tempo de processo.
+                  Possuo pós-graduação em Avaliação Psicológica, o que contribui para uma compreensão técnica e aprofundada das demandas apresentadas no processo terapêutico. Meu compromisso é proporcionar um espaço seguro de diálogo e construção conjunta, respeitando a singularidade e o tempo de cada pessoa.
                 </p>
               </div>
             </ScrollReveal>
