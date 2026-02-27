@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Heart, Sparkles } from "lucide-react";
+import { Heart, Instagram, Sparkles } from "lucide-react";
 import AnimatedLeaves from "@/components/AnimatedLeaves";
 import thaysClose from "@/assets/thays-close.jpeg";
 interface HeroSectionProps {
@@ -118,6 +118,16 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
+              {/* Instagram button */}
+              <a
+                href="https://www.instagram.com/thayslohanepsi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-10 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+                aria-label="Perfil no Instagram"
+              >
+                <Instagram className="w-5 h-5 md:w-6 md:h-6" />
+              </a>
             </div>
           </motion.div>
         </div>
