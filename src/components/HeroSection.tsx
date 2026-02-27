@@ -119,15 +119,17 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
                 />
               </div>
               {/* Instagram button */}
-              <a
+              <motion.a
                 href="https://www.instagram.com/thayslohanepsi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-10 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+                className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-10 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-shadow duration-300"
                 aria-label="Perfil no Instagram"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
               >
                 <Instagram className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         </div>
