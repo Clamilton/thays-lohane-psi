@@ -152,7 +152,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="text-center mt-4"
+              className="text-center mt-4 w-72 md:w-96 lg:w-[450px]"
             >
               <p className="text-xl md:text-2xl font-serif font-semibold text-foreground">Thays Lohane</p>
               <p className="text-sm md:text-base text-muted-foreground">Psicóloga</p>
