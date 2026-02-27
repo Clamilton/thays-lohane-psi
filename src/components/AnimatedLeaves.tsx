@@ -72,21 +72,25 @@ const GRASS_HEIGHT = 449.821;
 
 const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay?: number }) => {
   const isTop = position === 'top';
-  // Number of repetitions to ensure full coverage on wide screens
-  const repeatCount = 6;
+  const repeatCount = 10;
+  const tileWidthPx = 180;
 
   return (
     <div
       className={`absolute ${isTop ? 'top-0' : 'bottom-0'} left-0 w-full overflow-hidden`}
       style={{
-        height: '50px',
+        height: '55px',
         transform: isTop ? 'rotate(180deg)' : undefined,
         transformOrigin: 'center',
       }}
     >
       <motion.div
         className="flex h-full"
-        style={{ width: `${(100 / repeatCount) * repeatCount + 10}%`, filter: 'blur(0.15px)' }}
+        style={{
+          width: `${tileWidthPx * repeatCount}px`,
+          minWidth: '100%',
+          filter: 'blur(0.2px)',
+        }}
         variants={sproutVariant(delay, 1.5)}
         initial="hidden"
         animate="visible"
@@ -96,15 +100,16 @@ const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay
             key={i}
             className="text-forest h-full flex-shrink-0 animate-breeze-slow"
             style={{
-              width: `${100 / repeatCount}%`,
-              animationDelay: `${i * 0.3}s`,
-              transformOrigin: 'top center',
+              width: `${tileWidthPx}px`,
+              marginLeft: i === 0 ? 0 : '-4px',
+              animationDelay: `${i * 0.35}s`,
+              transformOrigin: 'bottom center',
             }}
             viewBox={`0 0 ${GRASS_WIDTH} ${GRASS_HEIGHT}`}
-            preserveAspectRatio="xMidYMax meet"
+            preserveAspectRatio="none"
             fill="none"
           >
-            <path d={GRASS_PATH} fill="currentColor" opacity="0.35" />
+            <path d={GRASS_PATH} fill="currentColor" opacity="0.4" />
           </svg>
         ))}
       </motion.div>
