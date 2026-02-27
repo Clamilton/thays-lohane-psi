@@ -86,24 +86,22 @@ const GrassIcon = ({ className = "", style = {}, delay = 0 }: { className?: stri
 
 const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay?: number }) => {
   const isTop = position === 'top';
-  const count = 20;
+  const count = 40;
 
   return (
     <div
       className={`absolute ${isTop ? 'top-0 rotate-180' : 'bottom-0'} left-0 right-0 flex`}
-      style={{ height: '28px', transformOrigin: 'center' }}
+      style={{ height: '32px', transformOrigin: 'center' }}
     >
       {Array.from({ length: count }).map((_, i) => {
         const animations = ['animate-breeze', 'animate-breeze-slow', 'animate-breeze-fast'];
         const anim = animations[i % 3];
-        const sizes = ['w-[5%]', 'w-[6%]', 'w-[5.5%]'];
-        const size = sizes[i % 3];
         return (
           <GrassIcon
             key={i}
-            className={`${size} h-full text-forest ${anim} -mx-[0.5%]`}
-            style={{ transformOrigin: 'bottom center' }}
-            delay={delay + i * 0.08}
+            className={`h-full text-forest ${anim}`}
+            style={{ transformOrigin: 'bottom center', width: '4%', marginLeft: '-1%', marginRight: '-1%', flexShrink: 0 }}
+            delay={delay + i * 0.04}
           />
         );
       })}
