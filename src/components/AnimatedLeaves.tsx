@@ -86,25 +86,56 @@ const GrassIcon = ({ className = "", style = {}, delay = 0 }: { className?: stri
 
 const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay?: number }) => {
   const isTop = position === 'top';
-  const count = 40;
+  // Use many small icons tiled across with negative spacing to guarantee no gaps
+  const items = 50;
 
   return (
     <div
-      className={`absolute ${isTop ? 'top-0 rotate-180' : 'bottom-0'} left-0 right-0 flex`}
-      style={{ height: '32px', transformOrigin: 'center' }}
+      className={`absolute ${isTop ? 'top-0' : 'bottom-0'} left-0 w-full overflow-hidden`}
+      style={{
+        height: '30px',
+        transform: isTop ? 'rotate(180deg)' : undefined,
+        transformOrigin: 'center',
+      }}
     >
-      {Array.from({ length: count }).map((_, i) => {
-        const animations = ['animate-breeze', 'animate-breeze-slow', 'animate-breeze-fast'];
-        const anim = animations[i % 3];
-        return (
-          <GrassIcon
-            key={i}
-            className={`h-full text-forest ${anim}`}
-            style={{ transformOrigin: 'bottom center', width: '4%', marginLeft: '-1%', marginRight: '-1%', flexShrink: 0 }}
-            delay={delay + i * 0.04}
-          />
-        );
-      })}
+      <div
+        style={{
+          display: 'flex',
+          width: '110%',
+          marginLeft: '-5%',
+          height: '100%',
+        }}
+      >
+        {Array.from({ length: items }).map((_, i) => {
+          const animations = ['animate-breeze', 'animate-breeze-slow', 'animate-breeze-fast'];
+          const anim = animations[i % 3];
+          return (
+            <motion.svg
+              key={i}
+              className={`text-forest ${anim}`}
+              style={{
+                flex: '0 0 auto',
+                width: `${110 / items}%`,
+                height: '100%',
+                marginLeft: i === 0 ? 0 : '-0.8%',
+                transformOrigin: 'bottom center',
+                filter: 'blur(1px)',
+              }}
+              viewBox="0 0 24 24"
+              fill="none"
+              variants={sproutVariant(delay + i * 0.03, 1.2)}
+              initial="hidden"
+              animate="visible"
+            >
+              <path
+                d="M5,2c.82.82,5.61,2.88,6,18,0,.65,0,1.31,0,2h3C14,2.12,7,2,5,2ZM19,5a7,7,0,0,0-5.56,3,16.3,16.3,0,0,1,1.12,4C15.74,6.79,18.39,5.61,19,5ZM2,9c.77.77,4.72,3.09,5,12,0,.32,0,.66,0,1h3C10,13.52,7.5,9.22,2,9ZM22,9c-2,0-7,2.25-7,13h3C18,13,21.12,9.88,22,9Z"
+                fill="currentColor"
+                opacity="0.2"
+              />
+            </motion.svg>
+          );
+        })}
+      </div>
     </div>
   );
 };
