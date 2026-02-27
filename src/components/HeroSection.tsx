@@ -147,6 +147,16 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
                 <Instagram className="w-5 h-5 md:w-6 md:h-6" />
               </motion.a>
             </div>
+            {/* Name and title */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 }}
+              className="text-center mt-4"
+            >
+              <p className="text-xl md:text-2xl font-serif font-semibold text-foreground">Thays Lohane</p>
+              <p className="text-sm md:text-base text-muted-foreground">Psicóloga</p>
+            </motion.div>
           </motion.div>
         </div>
       </div>
