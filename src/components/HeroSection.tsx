@@ -106,7 +106,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex flex-col items-center lg:items-end"
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
               {/* Ripple pulse rings */}
