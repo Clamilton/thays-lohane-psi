@@ -72,7 +72,7 @@ const GRASS_HEIGHT = 449.821;
 
 const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay?: number }) => {
   const isTop = position === 'top';
-  const repeatCount = 10;
+  const repeatCount = 16;
   const tileWidthPx = 180;
 
   return (
