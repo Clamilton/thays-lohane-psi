@@ -40,7 +40,7 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground leading-tight"
             >
               Cuidar da mente é um ato de{" "}
-              <span className="text-primary relative">
+              <span className="text-primary relative whitespace-nowrap">
                 amor próprio
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                   <path d="M2 8C50 2 150 2 198 8" stroke="hsl(var(--primary))" strokeWidth="3" strokeLinecap="round" opacity="0.3"/>
