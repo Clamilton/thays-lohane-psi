@@ -42,7 +42,7 @@ const AboutSection = () => {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-foreground mb-6">
                 Prazer, sou a <span className="text-primary">Thays Lohane</span>
               </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed md:leading-8">
                 <p>
                   Sou psicóloga com mais de 5 anos de atuação, dedicada ao atendimento de adultos que buscam compreender suas emoções, enfrentar desafios e construir novas possibilidades em suas vidas.
                 </p>
