@@ -24,11 +24,7 @@ const Leaf = ({ className = "", style = {}, delay = 0 }: { className?: string; s
     initial="hidden"
     animate="visible"
   >
-    <path
-      d="M30 0C30 0 5 20 5 50C5 65 16 78 30 80C44 78 55 65 55 50C55 20 30 0 30 0Z"
-      fill="currentColor"
-      opacity="0.6"
-    />
+    <path d="M30 0C30 0 5 20 5 50C5 65 16 78 30 80C44 78 55 65 55 50C55 20 30 0 30 0Z" fill="currentColor" opacity="0.6" />
     <path d="M30 10V70" stroke="currentColor" strokeWidth="1.5" opacity="0.4" />
     <path d="M30 25C22 30 15 38 12 48" stroke="currentColor" strokeWidth="1" opacity="0.3" />
     <path d="M30 35C38 40 45 48 48 55" stroke="currentColor" strokeWidth="1" opacity="0.3" />
@@ -46,11 +42,7 @@ const SmallLeaf = ({ className = "", style = {}, delay = 0 }: { className?: stri
     initial="hidden"
     animate="visible"
   >
-    <path
-      d="M20 0C20 0 2 15 2 32C2 42 10 50 20 50C30 50 38 42 38 32C38 15 20 0 20 0Z"
-      fill="currentColor"
-      opacity="0.5"
-    />
+    <path d="M20 0C20 0 2 15 2 32C2 42 10 50 20 50C30 50 38 42 38 32C38 15 20 0 20 0Z" fill="currentColor" opacity="0.5" />
     <path d="M20 8V45" stroke="currentColor" strokeWidth="1" opacity="0.35" />
   </motion.svg>
 );
@@ -66,33 +58,17 @@ const Branch = ({ className = "", style = {}, delay = 0 }: { className?: string;
     animate="visible"
   >
     <path d="M60 160V40" stroke="currentColor" strokeWidth="2" opacity="0.3" />
-    <path
-      d="M60 40C60 40 40 10 25 5C15 2 5 8 5 18C5 30 20 40 35 42C45 43 55 40 60 40Z"
-      fill="currentColor"
-      opacity="0.5"
-    />
-    <path
-      d="M60 70C60 70 80 45 95 42C105 40 115 48 112 58C108 70 90 75 75 72C65 70 60 68 60 70Z"
-      fill="currentColor"
-      opacity="0.45"
-    />
-    <path
-      d="M60 100C60 100 42 78 28 76C18 75 10 82 12 92C15 103 32 108 45 104C54 101 60 98 60 100Z"
-      fill="currentColor"
-      opacity="0.4"
-    />
-    <path
-      d="M60 125C60 125 75 108 88 107C96 107 102 114 99 122C95 132 80 135 70 130C63 127 60 125 60 125Z"
-      fill="currentColor"
-      opacity="0.35"
-    />
+    <path d="M60 40C60 40 40 10 25 5C15 2 5 8 5 18C5 30 20 40 35 42C45 43 55 40 60 40Z" fill="currentColor" opacity="0.5" />
+    <path d="M60 70C60 70 80 45 95 42C105 40 115 48 112 58C108 70 90 75 75 72C65 70 60 68 60 70Z" fill="currentColor" opacity="0.45" />
+    <path d="M60 100C60 100 42 78 28 76C18 75 10 82 12 92C15 103 32 108 45 104C54 101 60 98 60 100Z" fill="currentColor" opacity="0.4" />
+    <path d="M60 125C60 125 75 108 88 107C96 107 102 114 99 122C95 132 80 135 70 130C63 127 60 125 60 125Z" fill="currentColor" opacity="0.35" />
   </motion.svg>
 );
 
 const GrassIcon = ({ className = "", style = {}, delay = 0 }: { className?: string; style?: React.CSSProperties; delay?: number }) => (
   <motion.svg
     className={className}
-    style={{ ...style, transformOrigin: 'bottom center', filter: 'blur(1.5px)' }}
+    style={{ ...style, transformOrigin: 'bottom center', filter: 'blur(1px)' }}
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +79,37 @@ const GrassIcon = ({ className = "", style = {}, delay = 0 }: { className?: stri
     <path
       d="M5,2c.82.82,5.61,2.88,6,18,0,.65,0,1.31,0,2h3C14,2.12,7,2,5,2ZM19,5a7,7,0,0,0-5.56,3,16.3,16.3,0,0,1,1.12,4C15.74,6.79,18.39,5.61,19,5ZM2,9c.77.77,4.72,3.09,5,12,0,.32,0,.66,0,1h3C10,13.52,7.5,9.22,2,9ZM22,9c-2,0-7,2.25-7,13h3C18,13,21.12,9.88,22,9Z"
       fill="currentColor"
-      opacity="0.18"
+      opacity="0.2"
     />
   </motion.svg>
 );
+
+const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay?: number }) => {
+  const isTop = position === 'top';
+  const count = 20;
+
+  return (
+    <div
+      className={`absolute ${isTop ? 'top-0 rotate-180' : 'bottom-0'} left-0 right-0 flex`}
+      style={{ height: '28px', transformOrigin: 'center' }}
+    >
+      {Array.from({ length: count }).map((_, i) => {
+        const animations = ['animate-breeze', 'animate-breeze-slow', 'animate-breeze-fast'];
+        const anim = animations[i % 3];
+        const sizes = ['w-[5%]', 'w-[6%]', 'w-[5.5%]'];
+        const size = sizes[i % 3];
+        return (
+          <GrassIcon
+            key={i}
+            className={`${size} h-full text-forest ${anim} -mx-[0.5%]`}
+            style={{ transformOrigin: 'bottom center' }}
+            delay={delay + i * 0.08}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 const AnimatedLeaves = () => {
   return (
@@ -123,29 +126,9 @@ const AnimatedLeaves = () => {
       <SmallLeaf className="absolute left-4 top-8 w-4 h-5 text-forest animate-breeze-fast rotate-45" delay={1.2} />
       <SmallLeaf className="absolute right-4 bottom-8 w-4 h-5 text-forest animate-breeze-slow -rotate-12" delay={1.8} />
 
-      {/* Bottom grass - continuous coverage */}
-      <GrassIcon className="absolute bottom-0 left-0 w-16 h-12 text-forest animate-breeze" delay={0.6} />
-      <GrassIcon className="absolute bottom-0 left-[8%] w-14 h-11 text-forest animate-breeze-fast" delay={0.8} />
-      <GrassIcon className="absolute bottom-0 left-[16%] w-16 h-12 text-forest animate-breeze-slow" delay={1.0} />
-      <GrassIcon className="absolute bottom-0 left-[24%] w-14 h-10 text-forest animate-breeze" delay={1.1} />
-      <GrassIcon className="absolute bottom-0 left-[32%] w-16 h-12 text-forest animate-breeze-fast" delay={0.7} />
-      <GrassIcon className="absolute bottom-0 left-[40%] w-14 h-11 text-forest animate-breeze-slow" delay={1.2} />
-      <GrassIcon className="absolute bottom-0 left-[48%] w-16 h-10 text-forest animate-breeze" delay={0.9} />
-      <GrassIcon className="absolute bottom-0 left-[56%] w-14 h-12 text-forest animate-breeze-fast" delay={1.3} />
-      <GrassIcon className="absolute bottom-0 left-[64%] w-16 h-11 text-forest animate-breeze-slow" delay={0.5} />
-      <GrassIcon className="absolute bottom-0 left-[72%] w-14 h-10 text-forest animate-breeze" delay={1.4} />
-      <GrassIcon className="absolute bottom-0 left-[80%] w-16 h-12 text-forest animate-breeze-fast" delay={0.8} />
-      <GrassIcon className="absolute bottom-0 right-0 w-18 h-12 text-forest animate-breeze-slow" delay={1.0} />
-
-      {/* Top grass - rotated */}
-      <GrassIcon className="absolute top-0 left-0 w-14 h-10 text-forest rotate-180 animate-breeze-slow" delay={0.7} />
-      <GrassIcon className="absolute top-0 left-[12%] w-12 h-10 text-forest rotate-180 animate-breeze" delay={0.9} />
-      <GrassIcon className="absolute top-0 left-[24%] w-14 h-11 text-forest rotate-180 animate-breeze-fast" delay={1.1} />
-      <GrassIcon className="absolute top-0 left-[38%] w-12 h-10 text-forest rotate-180 animate-breeze-slow" delay={0.8} />
-      <GrassIcon className="absolute top-0 left-[50%] w-14 h-10 text-forest rotate-180 animate-breeze" delay={1.0} />
-      <GrassIcon className="absolute top-0 left-[64%] w-12 h-11 text-forest rotate-180 animate-breeze-fast" delay={1.2} />
-      <GrassIcon className="absolute top-0 left-[76%] w-14 h-10 text-forest rotate-180 animate-breeze" delay={0.6} />
-      <GrassIcon className="absolute top-0 right-0 w-16 h-10 text-forest rotate-180 animate-breeze-slow" delay={1.0} />
+      {/* Continuous grass strips */}
+      <GrassStrip position="bottom" delay={0.5} />
+      <GrassStrip position="top" delay={0.7} />
     </div>
   );
 };
