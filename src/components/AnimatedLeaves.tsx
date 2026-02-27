@@ -91,9 +91,9 @@ const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay
           minWidth: '100%',
           filter: 'blur(0.6px)',
         }}
-        variants={sproutVariant(delay, 1.5)}
-        initial="hidden"
-        animate="visible"
+        initial={{ y: '100%', opacity: 0 }}
+        animate={{ y: '0%', opacity: 1 }}
+        transition={{ delay, duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
       >
         {Array.from({ length: repeatCount }).map((_, i) => (
           <svg
