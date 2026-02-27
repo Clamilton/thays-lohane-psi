@@ -69,8 +69,7 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Disponibilizo diferentes formas de atendimento psicológico, organizadas para atender às suas necessidades de
-            forma ética, responsável e personalizada. O processo terapêutico é conduzido com base teórica sólida e foco
-            na promoção do bem-estar emocional, da autonomia e da construção de novos sentidos para a sua vida.
+            forma ética, responsável e personalizada.
           </p>
         </ScrollReveal>
 
