@@ -89,7 +89,7 @@ const GrassStrip = ({ position, delay = 0 }: { position: 'bottom' | 'top'; delay
         style={{
           width: `${tileWidthPx * repeatCount}px`,
           minWidth: '100%',
-          filter: 'blur(0.2px)',
+          filter: 'blur(0.6px)',
         }}
         variants={sproutVariant(delay, 1.5)}
         initial="hidden"
