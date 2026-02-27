@@ -118,6 +118,18 @@
   }
 }
 
+/* Delicate leaf texture background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 10 C40 10 25 20 20 35 C18 42 22 48 30 48 C36 48 40 42 40 42 C40 42 44 48 50 48 C58 48 62 42 60 35 C55 20 40 10 40 10Z' fill='%23558B6E' opacity='0.6'/%3E%3Cpath d='M40 15 L40 44' stroke='%23558B6E' stroke-width='0.8' opacity='0.4'/%3E%3Cpath d='M10 60 C10 60 5 68 8 74 C10 78 16 78 18 74 C22 68 15 62 10 60Z' fill='%23558B6E' opacity='0.4'/%3E%3Cpath d='M65 5 C65 5 58 12 60 18 C61 22 66 23 68 20 C72 14 67 8 65 5Z' fill='%23558B6E' opacity='0.35'/%3E%3Cpath d='M70 55 C70 55 62 58 58 65 C56 70 60 75 65 74 C72 72 74 62 70 55Z' fill='%23558B6E' opacity='0.3'/%3E%3C/svg%3E");
+  background-size: 120px 120px;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
