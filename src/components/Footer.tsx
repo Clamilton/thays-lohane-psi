@@ -85,7 +85,15 @@ const Footer = () => {
             © {currentYear} Thays Lohane - Psicóloga. Todos os direitos reservados.
           </p>
           <p className="text-white/50 text-sm flex items-center gap-1">
-            Feito com <Heart className="w-4 h-4 text-destructive fill-destructive" /> para cuidar de você
+            Criado e Desenvolvido por{" "}
+            <a
+              href="https://www.instagram.com/mouracloud"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-white transition-colors underline"
+            >
+              Moura Cloud
+            </a>
           </p>
         </div>
       </div>
