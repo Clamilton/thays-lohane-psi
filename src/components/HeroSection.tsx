@@ -109,6 +109,22 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
             className="relative flex justify-center lg:justify-end"
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
+              {/* Ripple pulse rings */}
+              <motion.div
+                className="absolute inset-0 rounded-full border-2 border-primary/30"
+                animate={{ scale: [1, 1.08, 1], opacity: [0.4, 0, 0.4] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              />
+              <motion.div
+                className="absolute inset-0 rounded-full border-2 border-mint/40"
+                animate={{ scale: [1, 1.12, 1], opacity: [0.3, 0, 0.3] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              />
+              <motion.div
+                className="absolute inset-0 rounded-full border border-primary/20"
+                animate={{ scale: [1, 1.16, 1], opacity: [0.2, 0, 0.2] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-mint/30 rounded-full transform rotate-6" />
               <div className="absolute inset-4 bg-gradient-to-tr from-sage-light to-accent rounded-full" />
               <div className="absolute inset-8 bg-gradient-to-br from-primary/10 to-mint/20 rounded-full overflow-hidden border-4 border-background shadow-2xl">
