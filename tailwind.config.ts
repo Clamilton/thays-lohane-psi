@@ -137,7 +137,7 @@ export default {
         "breeze": "breeze 4s ease-in-out infinite",
         "breeze-slow": "breeze-slow 5s ease-in-out infinite",
         "breeze-fast": "breeze-fast 3s ease-in-out infinite",
-        "pulse-scale": "pulse-scale 3.5s ease-in-out infinite",
+        "pulse-scale": "pulse-scale 5s ease-in-out infinite",
         "ring-ping": "ring-ping 2s ease-out infinite",
       },
     },
