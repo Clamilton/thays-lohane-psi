@@ -134,7 +134,6 @@ const AnimatedLeaves = () => {
 
       {/* Continuous grass strips */}
       <GrassStrip position="bottom" delay={0.5} />
-      <GrassStrip position="top" delay={0.7} />
     </div>
   );
 };
