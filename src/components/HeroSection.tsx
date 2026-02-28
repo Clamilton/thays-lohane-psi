@@ -68,19 +68,22 @@ const HeroSection = ({ onScheduleClick }: HeroSectionProps) => {
               <Button 
                 size="lg" 
                 onClick={onScheduleClick}
-                className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-scale hover:animate-none hover:scale-105"
               >
                 <Heart className="w-5 h-5 mr-2" />
                 Agendar Consulta
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="text-lg px-8 py-6 rounded-full border-2"
-                onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Conhecer mais
-              </Button>
+              <div className="relative">
+                <span className="absolute inset-0 rounded-full border-2 border-primary/40 animate-ring-ping" />
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="relative text-lg px-8 py-6 rounded-full border-2"
+                  onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Conhecer mais
+                </Button>
+              </div>
             </motion.div>
 
             <motion.div

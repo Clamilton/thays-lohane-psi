@@ -119,6 +119,14 @@ export default {
           "60%": { transform: "skewX(3deg)" },
           "80%": { transform: "skewX(-2deg)" },
         },
+        "pulse-scale": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.07)" },
+        },
+        "ring-ping": {
+          "0%": { transform: "scale(1)", opacity: "0.6" },
+          "100%": { transform: "scale(1.5)", opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +137,8 @@ export default {
         "breeze": "breeze 4s ease-in-out infinite",
         "breeze-slow": "breeze-slow 5s ease-in-out infinite",
         "breeze-fast": "breeze-fast 3s ease-in-out infinite",
+        "pulse-scale": "pulse-scale 2s ease-in-out infinite",
+        "ring-ping": "ring-ping 2s ease-out infinite",
       },
     },
   },
