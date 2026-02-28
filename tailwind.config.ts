@@ -121,10 +121,7 @@ export default {
         },
         "pulse-scale": {
           "0%, 100%": { transform: "scale(1)" },
-          "8%": { transform: "scale(1.02)" },
-          "16%": { transform: "scale(1)" },
-          "24%": { transform: "scale(1.03)" },
-          "32%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.025)" },
         },
         "ring-ping": {
           "0%": { transform: "scale(1)", opacity: "0.6" },
@@ -140,7 +137,7 @@ export default {
         "breeze": "breeze 4s ease-in-out infinite",
         "breeze-slow": "breeze-slow 5s ease-in-out infinite",
         "breeze-fast": "breeze-fast 3s ease-in-out infinite",
-        "pulse-scale": "pulse-scale 6s ease-in-out infinite",
+        "pulse-scale": "pulse-scale 10s ease-in-out infinite",
         "ring-ping": "ring-ping 2s ease-out infinite",
       },
     },
