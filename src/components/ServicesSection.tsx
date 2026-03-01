@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Brain, Heart, HeartHandshake, Sparkles, Users, Flower2 } from "lucide-react";
 import AnimatedLeaves from "@/components/AnimatedLeaves";
 import ScrollReveal from "@/components/ScrollReveal";
+import FAQSection from "@/components/FAQSection";
 
 interface ServicesSectionProps {
   onScheduleClick: () => void;
@@ -94,6 +95,11 @@ const ServicesSection = ({ onScheduleClick }: ServicesSectionProps) => {
               </Card>
             </ScrollReveal>
           ))}
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-20">
+          <FAQSection />
         </div>
 
         {/* CTA */}
