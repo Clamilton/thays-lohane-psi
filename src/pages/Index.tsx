@@ -9,6 +9,9 @@ const WHATSAPP_URL = "https://wa.me/5563992774658?text=Olá,%20quero%20marcar%20
 
 const Index = () => {
   const handleScheduleClick = () => {
+    if (typeof window.gtag_report_conversion === "function") {
+      window.gtag_report_conversion();
+    }
     window.open(WHATSAPP_URL, "_blank");
   };
 
